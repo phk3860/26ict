@@ -1,0 +1,9 @@
+streamlit
+python-dotenv
+pandas
+plotly
+finance-datareader
+requests
+beautifulsoup4
+websocket-client
+playwright
