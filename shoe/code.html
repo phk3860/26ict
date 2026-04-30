@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Drops (Home) - Streetwear &amp; Hype</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "primary": "#d8f906",
+          "background-light": "#f8f8f5",
+          "background-dark": "#050505",
+          "surface-dark": "#121212",
+          "muted": "#4B5563",
+          "accent": "#FF2E2E"
+        },
+        fontFamily: {
+          "display": ["Manrope", "sans-serif"],
+          "mono": ["ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", "monospace"]
+        },
+        borderRadius: {"DEFAULT": "0px", "sm": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+      },
+    },
+  }
+</script>
+<style>
+  body {
+    font-family: 'Manrope', sans-serif;
+    background-color: #050505;
+    color: #F9FAFB;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* Brutalist specific utilities */
+  .border-b-hard {
+    border-bottom: 1px solid #4B5563;
+  }
+  .border-t-hard {
+    border-top: 1px solid #4B5563;
+  }
+  
+  /* Hide scrollbar for clean look */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Ticker animation */
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  .animate-marquee {
+    animation: marquee 20s linear infinite;
+  }
+
+  /* Parallax setup */
+  .parallax-container {
+    perspective: 1px;
+    height: 60vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+  }
+  .parallax-layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .parallax-bg {
+    transform: translateZ(-1px) scale(2);
+    transform-origin: 0 0;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* Active state for cards */
+  .active-scale:active {
+    transform: scale(0.98);
+    transition: transform 0.05s ease-in-out;
+  }
+</style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-dark text-white flex flex-col min-h-screen overflow-x-hidden selection:bg-primary selection:text-black">
+<!-- Sticky Marquee Nav -->
+<header class="sticky top-0 z-50 bg-[#050505] border-b-hard h-14 flex items-center overflow-hidden w-full backdrop-blur-md bg-opacity-90">
+<div class="flex whitespace-nowrap animate-marquee font-mono text-sm tracking-wider text-primary">
+<span class="mx-4 font-bold">AJ1 HIGH <span class="text-green-500">+12%</span></span>
+<span class="mx-4 text-muted">•</span>
+<span class="mx-4 font-bold">YEEZY 350 <span class="text-accent">-4%</span></span>
+<span class="mx-4 text-muted">•</span>
+<span class="mx-4 font-bold">DUNK LOW <span class="text-green-500">+8%</span></span>
+<span class="mx-4 text-muted">•</span>
+<span class="mx-4 font-bold">NB 990 <span class="text-green-500">+2%</span></span>
+<span class="mx-4 text-muted">•</span>
+<span class="mx-4 font-bold">SB PINE GREEN <span class="text-primary animate-pulse">LIVE</span></span>
+<span class="mx-4 text-muted">•</span>
+<!-- Duplicate for seamless loop -->
+<span class="mx-4 font-bold">AJ1 HIGH <span class="text-green-500">+12%</span></span>
+<span class="mx-4 text-muted">•</span>
+<span class="mx-4 font-bold">YEEZY 350 <span class="text-accent">-4%</span></span>
+<span class="mx-4 text-muted">•</span>
+<span class="mx-4 font-bold">DUNK LOW <span class="text-green-500">+8%</span></span>
+<span class="mx-4 text-muted">•</span>
+<span class="mx-4 font-bold">NB 990 <span class="text-green-500">+2%</span></span>
+<span class="mx-4 text-muted">•</span>
+<span class="mx-4 font-bold">SB PINE GREEN <span class="text-primary animate-pulse">LIVE</span></span>
+</div>
+</header>
+<!-- Main Content Scroll Area -->
+<main class="flex-1 overflow-y-auto pb-24">
+<!-- Hero Drop Card -->
+<section class="w-full h-[530px] relative bg-surface-dark border-b-hard cursor-pointer active-scale overflow-hidden group">
+<!-- Status Badge -->
+<div class="absolute top-4 left-4 z-20 bg-primary text-black font-extrabold text-sm px-3 py-1 uppercase tracking-widest flex items-center gap-2 shadow-[2px_2px_0px_rgba(255,255,255,0.2)]">
+<span class="w-2 h-2 rounded-full bg-black animate-ping"></span>
+        발매중
+      </div>
+<!-- Parallax Image -->
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-center bg-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="dramatic lighting side profile of a premium green and white sneaker suspended in dark empty space with sharp shadows" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC-gUAakypAfEOgwTNpxNKRhesi8GMdYZR-22IkBs4ktW78PoGM7QKZufhU3KWL1cpUKAbtlArAI8avSbe7O-hUqzzTzgjNbfVBf6gJ_aWRkNKLI92CDhbHy9RsITd9mvnR5mk2ASvHcX9oNq81Wu-JFgsWGAjp0K1whBhfgEPHeAjW9B9XJawbE0F1XC6ukDw7Nkxf28JoelvZH8qS8PrVhCecSFATVJ_XQRhQdgRmdQgk8zxt94bZelpoPDzQIXBLCYV4CfTWBIE');">
+</div>
+<!-- Gradient Overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+</div>
+<!-- Typography Overlay -->
+<div class="absolute bottom-0 left-0 w-full p-6 z-10 flex flex-col justify-end">
+<p class="font-mono text-primary text-xs tracking-widest mb-2">SKU: DR5415-103</p>
+<h1 class="text-4xl md:text-5xl font-extrabold uppercase leading-none tracking-tighter mb-1 break-words w-full">
+          JORDAN 4 RETRO SB
+        </h1>
+<h2 class="text-2xl md:text-3xl font-bold text-gray-300 uppercase leading-none tracking-tight">
+          PINE GREEN
+        </h2>
+<div class="mt-4 flex justify-between items-end">
+<span class="font-mono text-xl font-bold">$225</span>
+<span class="text-sm font-bold text-primary flex items-center gap-1">
+            COP NOW <span class="material-symbols-outlined text-base">arrow_forward</span>
+</span>
+</div>
+</div>
+</section>
+<!-- Upcoming Drops Feed -->
+<section class="w-full">
+<div class="px-4 py-6 border-b-hard flex justify-between items-end bg-[#050505] sticky top-0 z-40">
+<h3 class="text-xl font-extrabold uppercase tracking-tight">UPCOMING</h3>
+<span class="font-mono text-xs text-muted">SORT: NEXT DROP</span>
+</div>
+<!-- List Item 1 -->
+<div class="w-full h-[120px] flex border-b-hard bg-surface-dark cursor-pointer active-scale hover:bg-[#1a1a1a] transition-colors">
+<div class="w-[120px] h-full flex-shrink-0 bg-black p-2 border-r border-muted">
+<div class="w-full h-full bg-center bg-contain bg-no-repeat" data-alt="overhead view of a chunky textured beige and grey streetwear sneaker on a dark background" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBCKWHCpxNHzC-5-YGbwLRmfKNqvdrN7MsWbSVs9_Q0O6rxwLUy8DHIsT6YWB6icUTb_nq019KNQQ2fF7QpzGU6ct8ICuqoXamFpk-Rj1CbBCYG2IaGk9S_NtGUmzzB3rjRgLKjQStU0OdJEl-SXZtrleNlLnkwsw_svGuoSySHgwHEiXeBkpo_ujo5NG4tOnNOkBEkqBa48nliIT2axrOEPe2sID8hHibs6DjJmqY25w6DvIeMy4ZpMW3zLBmS7C0-4YdpZpUv3ic');">
+</div>
+</div>
+<div class="flex-1 p-4 flex flex-col justify-between relative">
+<div class="absolute top-4 right-4 bg-[#050505] border border-muted px-2 py-0.5">
+<span class="font-mono text-[10px] text-accent font-bold animate-pulse">02:14:59</span>
+</div>
+<div>
+<h4 class="font-extrabold uppercase text-lg leading-tight w-3/4 truncate">TRAVIS SCOTT X AJ1</h4>
+<p class="font-bold text-muted text-sm uppercase">OLIVE LOW</p>
+</div>
+<div class="flex justify-between items-baseline">
+<span class="font-mono text-sm">MAY 15 • 10AM EST</span>
+<span class="font-mono text-sm font-bold">$150</span>
+</div>
+</div>
+</div>
+<!-- List Item 2 -->
+<div class="w-full h-[120px] flex border-b-hard bg-surface-dark cursor-pointer active-scale hover:bg-[#1a1a1a] transition-colors">
+<div class="w-[120px] h-full flex-shrink-0 bg-black p-2 border-r border-muted">
+<div class="w-full h-full bg-center bg-contain bg-no-repeat" data-alt="angled shot of a minimalist white and cream low top leather sneaker with subtle stitching" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCEOXguH41ee4sbhSh6Pox-u0rBn-Bqeh-uisBuU4lXuWYqeI4L0v8azmamq0G4gflf5F8QIZ_uDGrFqsmbx_nW_jvFaRkrv6kSdsvzhkIdFKIVvKFgnAs4kI1iFWOJrsGW_PTPDg4b4yeD2MSFSxkQzTJvswBpZi46vgI1aVsllEN4ZkzxE425xEuE0DnCPU-Avx1wX-G9aZv8n9IxbpzlKCnWyfAXdSgpuhdHeCRneep9Qc8cH2zWVdd4wbM6bxPBrpoHMBXF8vQ');">
+</div>
+</div>
+<div class="flex-1 p-4 flex flex-col justify-between relative">
+<div class="absolute top-4 right-4 bg-[#050505] border border-muted px-2 py-0.5">
+<span class="font-mono text-[10px] text-white">MAY 20</span>
+</div>
+<div>
+<h4 class="font-extrabold uppercase text-lg leading-tight w-3/4 truncate">A MA MANIÉRE X AJ4</h4>
+<p class="font-bold text-muted text-sm uppercase">VIOLET ORE</p>
+</div>
+<div class="flex justify-between items-baseline">
+<span class="font-mono text-sm">MAY 20 • 10AM EST</span>
+<span class="font-mono text-sm font-bold">$225</span>
+</div>
+</div>
+</div>
+<!-- List Item 3 -->
+<div class="w-full h-[120px] flex border-b-hard bg-surface-dark cursor-pointer active-scale hover:bg-[#1a1a1a] transition-colors opacity-60">
+<div class="w-[120px] h-full flex-shrink-0 bg-black p-2 border-r border-muted">
+<div class="w-full h-full bg-center bg-contain bg-no-repeat grayscale" data-alt="black and white silhouette image of a classic high top athletic shoe on dark background" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBUdmSQW_1As81oFTBJvdJgbOJzDQhRr3OFHeTl5OVTTsjNeQVk2q66j1SJTLTRIlEPwDuMqtw08Y-mGbZDDg7_FuwPYO_GrhIGxeWLrt5FisOBFgFAuPs5yCzjvNaBNjJXf84RLlKz51_fI7VnTdCKjg4VDnL1-pvb1WEY52hZRdGwF1gA2l-1S0TcZLV_Xen4hSXgdgJ4DSHZ53OkmllFgXOwyBuTbBY93TDSUoRYTjhr2CYLO6rSUjcrkNJEej0qxMnrtzAfMMk');">
+</div>
+</div>
+<div class="flex-1 p-4 flex flex-col justify-between relative">
+<div class="absolute top-4 right-4 bg-accent px-2 py-0.5">
+<span class="font-mono text-[10px] text-white font-bold">SOLD OUT</span>
+</div>
+<div>
+<h4 class="font-extrabold uppercase text-lg leading-tight w-3/4 truncate line-through text-muted">DUNK LOW</h4>
+<p class="font-bold text-muted text-sm uppercase">PANDA</p>
+</div>
+<div class="flex justify-between items-baseline">
+<span class="font-mono text-sm text-muted">DROPPED YESTERDAY</span>
+<span class="font-mono text-sm font-bold text-primary">BUY RESALE</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Shared BottomNavBar Component -->
+<div class="fixed bottom-0 w-full z-50">
+<div class="flex gap-2 border-t border-[#444a21] bg-[#313518] px-4 pb-3 pt-2">
+<a class="just flex flex-1 flex-col items-center justify-end gap-1 rounded-full text-primary" href="#">
+<div class="text-primary flex h-8 items-center justify-center" data-icon="House" data-size="24px" data-weight="fill" style="font-variation-settings: 'FILL' 1;">
+<span class="material-symbols-outlined text-2xl">house</span>
+</div>
+</a>
+<a class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#c4cc8e]" href="#">
+<div class="text-[#c4cc8e] flex h-8 items-center justify-center" data-icon="Tag" data-size="24px" data-weight="regular">
+<span class="material-symbols-outlined text-2xl">tag</span>
+</div>
+</a>
+<a class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#c4cc8e]" href="#">
+<div class="text-[#c4cc8e] flex h-8 items-center justify-center" data-icon="ShoppingCart" data-size="24px" data-weight="regular">
+<span class="material-symbols-outlined text-2xl">shopping_cart</span>
+</div>
+</a>
+<a class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#c4cc8e]" href="#">
+<div class="text-[#c4cc8e] flex h-8 items-center justify-center" data-icon="User" data-size="24px" data-weight="regular">
+<span class="material-symbols-outlined text-2xl">verified_user</span>
+</div>
+</a>
+</div>
+<!-- Removed the extra text bar from the shared component as it conflicts with the marquee nav above and clutters the bottom -->
+<div class="h-5 bg-[#212310] hidden pb-safe"></div>
+</div>
+</body></html>
